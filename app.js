@@ -34,10 +34,10 @@ app.post("/",function(req,res){
     };
 
     const jsonData=JSON.stringify(data);
-    const url="https://us6.api.mailchimp.com/3.0/lists/332f7dbfcd";
+    const url="https://us6.api.mailchimp.com/3.0/lists/LI";/*Put List id of mailchimp account in place of LI*/
     const options={
         method: "POST",
-        auth:"saransh: 8f6d9918c458bc001d1cfafbbf2d7227-us6"
+        auth:"saransh: AK" /* Put api key of mailchimp account in place of AK*/
     }
     const request=https.request(url,options,function(response){
 
@@ -67,4 +67,3 @@ app.listen(port,function(){
 
 
 
-/*List ID  332f7dbfcd */
